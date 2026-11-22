@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>슈퍼비트 Pro 개인정보처리방침</title>
+<style>
+  :root { --fg:#1b1d24; --muted:#5b6070; --bg:#f5f7fa; --card:#fff; --brand:#0003ff; }
+  @media (prefers-color-scheme: dark) { :root { --fg:#e8eaf0; --muted:#9aa0b0; --bg:#090c1a; --card:#111827; --brand:#6e7bff; } }
+  body { margin:0; background:var(--bg); color:var(--fg); font:16px/1.7 -apple-system, "Apple SD Gothic Neo", "Noto Sans KR", sans-serif; }
+  main { max-width:760px; margin:0 auto; padding:32px 16px 64px; }
+  h1 { font-size:26px; margin:0 0 4px; } h2 { font-size:18px; margin:32px 0 8px; color:var(--brand); }
+  .meta { color:var(--muted); font-size:14px; } table { width:100%; border-collapse:collapse; font-size:14px; background:var(--card); }
+  th, td { border:1px solid rgba(128,128,128,.25); padding:8px 10px; text-align:left; vertical-align:top; }
+  .note { background:var(--card); border-radius:12px; padding:12px 16px; color:var(--muted); font-size:14px; }
+</style>
+</head>
+<body><main>
+<h1>슈퍼비트 Pro 개인정보처리방침</h1>
+<p class="meta">시행일: 2026-11-22 · 운영자: 뉴타입스</p>
+
+<p>뉴타입스(이하 "운영자")은 슈퍼비트 Pro 앱(이하 "앱") 이용자의 개인정보를 중요하게 여기며, 「개인정보 보호법」 등 관련 법령을 지킵니다.</p>
+
+<div class="note">요약: 앱에는 회원가입이 없고, <b>운영자는 별도 서버를 운영하지 않으며 이용자의 개인정보를 운영자 서버로 수집·전송하지 않습니다.</b> 매매 설정·기록과 업비트 API 키는 이용자의 기기 안에만 저장됩니다.</div>
+
+<h2>1. 기기 안에만 저장되는 정보</h2>
+<table>
+<tr><th>항목</th><th>저장 위치</th><th>목적</th></tr>
+<tr><td>업비트 API Access Key / Secret Key</td><td>iOS Keychain / Android Keystore (암호화)</td><td>업비트 계좌 조회·주문</td></tr>
+<tr><td>매매 설정, 체결 내역, 세션 기록, 알림 설정</td><td>앱 내부 저장소</td><td>자동매매 실행, 리포트 표시</td></tr>
+<tr><td>구독 상태(유효 여부·만료 예정일)</td><td>앱 내부 저장소</td><td>Pro 기능 제공</td></tr>
+</table>
+<p>이 정보는 앱을 삭제하면 함께 삭제됩니다. 앱의 [내 정보 › 매매 기록 모두 지우기], [업비트 연결 › 연결 해제]로 언제든 직접 지울 수 있습니다.</p>
+
+<h2>2. 앱이 직접 통신하는 외부 서비스</h2>
+<p>앱은 기능 제공을 위해 아래 서비스와 직접 통신합니다. 각 서비스는 통신 과정에서 이용자의 IP 주소 등 접속 정보를 처리할 수 있으며, 그 처리에는 각 서비스의 개인정보처리방침이 적용됩니다.</p>
+<table>
+<tr><th>서비스</th><th>보내는 정보</th><th>목적</th></tr>
+<tr><td>업비트(두나무) api.upbit.com</td><td>API 키로 서명한 요청(계좌 조회·주문), 시세 조회</td><td>시세 확인, 자동매매 주문, 자산 조회</td></tr>
+<tr><td>ipify api.ipify.org</td><td>접속 요청(IP 주소)</td><td>업비트 API 허용 IP 등록 안내용으로 이용자의 공인 IP 표시</td></tr>
+<tr><td>토큰포스트 tokenpost.kr</td><td>접속 요청</td><td>코인 뉴스 RSS 표시</td></tr>
+<tr><td>Hugging Face huggingface.co</td><td>접속 요청</td><td>AI슈퍼비트 모델 파일 다운로드 (대화 내용은 전송하지 않으며 기기 안에서 처리)</td></tr>
+<tr><td>Apple App Store / Google Play</td><td>결제·구독 정보(스토어가 처리)</td><td>Pro 구독 결제·복원·상태 확인</td></tr>
+</table>
+<p>운영자는 이용자의 업비트 API 키, 계좌 정보, 결제 수단 정보에 접근하지 않습니다.</p>
+
+<h2>3. 기기 권한</h2>
+<table>
+<tr><th>권한</th><th>목적</th><th>필수 여부</th></tr>
+<tr><td>알림</td><td>체결·손절·오류·일일 결산 알림</td><td>선택</td></tr>
+<tr><td>Face ID / 지문 / 기기 암호</td><td>실전 시작·전체 매도·API 키 변경 시 본인 확인. 생체 정보는 기기 운영체제가 처리하며 앱은 결과(성공/실패)만 받습니다.</td><td>선택</td></tr>
+<tr><td>인터넷</td><td>시세 조회 및 주문</td><td>필수</td></tr>
+</table>
+
+<h2>4. 제3자 제공 및 처리 위탁</h2>
+<p>운영자는 개인정보를 수집하지 않으므로 제3자에게 제공하거나 처리를 위탁하지 않습니다.</p>
+
+<h2>5. 아동의 개인정보</h2>
+<p>앱은 만 19세 미만을 대상으로 하지 않습니다. 가상자산 거래소 이용 요건은 업비트 정책을 따릅니다.</p>
+
+<h2>6. 이용자의 권리</h2>
+<p>앱에 저장된 정보는 모두 이용자 기기에 있으므로, 이용자는 앱 기능 또는 앱 삭제로 언제든 열람·삭제할 수 있습니다. 문의는 아래 연락처로 해 주세요.</p>
+
+<h2>7. 개인정보 보호책임자 및 문의</h2>
+<p>책임자: 뉴타입스 · 이메일: openrace.info@gmail.com · 커뮤니티: <a href="https://cafe.naver.com/superbit">cafe.naver.com/superbit</a></p>
+
+<h2>8. 변경</h2>
+<p>이 방침이 바뀌면 시행 7일 전부터 앱 또는 이 페이지에서 알립니다.</p>
+</main></body>
+</html>
